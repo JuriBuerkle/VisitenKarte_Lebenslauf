@@ -56,7 +56,7 @@ export default function Lebenslauf(): JSX.Element {
                     <section className="section">
                         <h2>BERUFLICHE ERFAHRUNG</h2>
                         <div>
-                            <p><span>Quereinsteiger:</span> 12.2015 - Heute</p>
+                            <p><span>Quereinsteiger:</span> 12.2015 - 12.2025</p>
                             <p>Radeberger Gruppe Niederlassung Bischofsheim</p>
                             <p><span>Quereinsteiger:</span> 2004 - 2015</p>
                             <p>Acker Transport Spedition</p>
@@ -67,7 +67,7 @@ export default function Lebenslauf(): JSX.Element {
                         <h2>AUSBILDUNG</h2>
                         <div className="entry">
                             <h3>Fullstack Development</h3>
-                            <p>11.2024 - 02.2026</p>
+                            <p>11.2024 - 04.2026</p>
                             <p>ATI Technology Berlin</p>
                         </div>
                         <div className="entry">
