@@ -1,15 +1,18 @@
-body {
+.lebenslauf-page {
+    min-height: 100vh;
     color: #ae70f0;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
     background-image: url("https://media.istockphoto.com/id/1389405898/photo/binary-matrix.jpg?s=612x612&w=0&k=20&c=1kB1ZmH1aIokkSUO_LHZL-koSgyOtYzui-YLQLhdMoU=");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.button {
+.lebenslauf-page .button {
     position: sticky;
     top: 20px;
-    margin: 80px;
+    margin: 20px 80px;
     padding: 5px 20px;
     background-color: #07680a;
     color: rgb(223, 114, 114);
@@ -19,70 +22,74 @@ body {
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
+    text-decoration: none;
+    display: inline-block;
 }
 
-.button:hover {
-    font-size: 10px 20px;
+.lebenslauf-page .button:hover {
     color: #91ca16;
     background-color: #0056b3;
     padding: 10px 20px;
 }
 
-.resume-container {
+.lebenslauf-page .resume-container {
     max-width: 800px;
     margin: 0 auto;
     border-radius: 2%;
     background-color: #02040792;
     padding: 20px;
-    background-image: url("");
 }
 
-.header {
+.lebenslauf-page .header {
     background-image: url("https://cms-images.mmst.eu/2rj3gcd43pmw/2uyCGYJgt6gWnXBToUA3qi/17a074a5cf2848da72838bd6d2626f1b/ki-prozessor.jpg?q=60&w=1200&fm=webp");
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: end;
-
+    padding: 10px;
 }
 
-h1 {
+.lebenslauf-page h1 {
     text-align: center;
     color: #91ca16;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.contact-info {
+.lebenslauf-page .contact-info {
     text-align: right;
     color: rgb(162, 59, 8);
 }
 
-.email:hover {
-    cursor: pointer;
-}
-
-a {
+.lebenslauf-page .email {
     color: rgb(162, 59, 8);
     text-decoration: none;
 }
 
-a>span {
+.lebenslauf-page .email:hover {
+    cursor: pointer;
+}
+
+.lebenslauf-page a {
+    color: rgb(162, 59, 8);
+    text-decoration: none;
+}
+
+.lebenslauf-page a>span {
     text-decoration: underline;
     text-underline-offset: 5px;
     font-style: oblique;
     color: #f0a500;
 }
 
-p>span {
+.lebenslauf-page p>span {
     text-decoration: underline;
     text-underline-offset: 5px;
     font-style: oblique;
     color: #f0a500;
 }
 
-.profile-photo img {
+.lebenslauf-page .profile-photo img {
     margin-right: 40px;
     border-radius: 50%;
     width: 150px;
@@ -90,41 +97,45 @@ p>span {
     border: 2px solid orange;
 }
 
-li::marker {
-    color: orange;
-    content: "➤ ";
-}
-
-.section {
+.lebenslauf-page .section {
     margin-top: 30px;
 }
 
-.section h2 {
+.lebenslauf-page .section h2 {
     text-align: center;
     color: rgb(192, 187, 227);
     border-bottom: 2px solid orange;
     padding-bottom: 5px;
 }
 
-.columns {
+.lebenslauf-page .columns {
     display: flex;
     justify-content: space-around;
     gap: 50px;
 }
 
-
-.entry h3 {
+.lebenslauf-page .entry h3 {
     color: #c36060;
     margin: 0;
 }
 
-.language-entry {
+.lebenslauf-page .language-entry {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-.language-levels {
+.lebenslauf-page .language-levels {
     display: flex;
     gap: 20px;
+}
+
+.lebenslauf-page .text {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.lebenslauf-page .text li::before {
+    content: "➤ ";
+    color: orange;
 }

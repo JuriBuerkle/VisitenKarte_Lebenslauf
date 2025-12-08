@@ -1,10 +1,10 @@
 import type { JSX } from "react"
-
+import { Link } from "react-router-dom"
+import "./VisitenKarte.css"
 
 export default function VisitenKarte(): JSX.Element {
-
     return (
-        <body>
+        <div className="visitenkarte-page">
             <div className="business-card">
                 <h1>Juri Bürkle</h1>
                 <h2>Fullstack Developer</h2>
@@ -28,19 +28,19 @@ export default function VisitenKarte(): JSX.Element {
                 </div>
                 <div className="contact-info">
                     <a className="email" href="mailto:rastopka@gmx.de">
-                        <summary>Email:</summary> rastopka@gmx.de
+                        Email: rastopka@gmx.de
                     </a>
                     <div>
                         <br />
-                        <a className="link zum resume" href="https://juribuerkle.github.io/VisitenkarteLebenslauf/Lebenslauf/index.html">Link zum
-                            Lebenslauf</a>
+                        <Link className="link" to="/lebenslauf">Link zum Lebenslauf</Link>
                         <br />
                         <p className="phone">
-                            <span className="phone-marquee">P h o n e:</span><a href="tel:+4917632240227" target="_blank"> +49 17632240227</a>
+                            <span className="phone-marquee">P h o n e:</span>
+                            <a href="tel:+4917632240227" target="_blank" rel="noreferrer"> +49 17632240227</a>
                         </p>
                     </div>
                 </div>
             </div>
-        </body>
+        </div>
     )
 }

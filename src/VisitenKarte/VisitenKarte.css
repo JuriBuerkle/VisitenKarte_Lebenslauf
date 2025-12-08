@@ -1,0 +1,110 @@
+.visitenkarte-page {
+    min-height: 100vh;
+    background-image: url("/J_Buerkle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+}
+
+.visitenkarte-page h1 {
+    text-align: center;
+    color: rgb(244, 209, 10);
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.visitenkarte-page h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(166, 207, 54);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.visitenkarte-page .technologien {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(166, 207, 54);
+}
+
+.visitenkarte-page .columns {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.visitenkarte-page ul {
+    font-size: 30px;
+    color: rgb(125, 221, 69);
+    list-style: none;
+    padding: 0;
+}
+
+.visitenkarte-page .contact-info {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(171, 223, 40);
+}
+
+.visitenkarte-page .email {
+    color: rgb(171, 223, 40);
+    text-decoration: none;
+}
+
+.visitenkarte-page .email:hover {
+    color: rgb(214, 160, 160);
+    cursor: pointer;
+}
+
+.visitenkarte-page .link {
+    color: rgb(171, 223, 40);
+    text-decoration: none;
+}
+
+.visitenkarte-page .link:hover {
+    transition: all 0.4s ease;
+    background-color: #6210d3;
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+    text-decoration: none;
+    color: rgb(221, 218, 19);
+    font-size: 25px;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.visitenkarte-page .phone {
+    color: rgb(171, 223, 40);
+}
+
+.visitenkarte-page .phone a {
+    color: rgb(171, 223, 40);
+    text-decoration: none;
+}
+
+.visitenkarte-page .phone a:hover {
+    color: rgb(214, 160, 160);
+    cursor: pointer;
+}
+
+.visitenkarte-page .phone-marquee {
+    display: inline-block;
+    animation: marquee 3s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
