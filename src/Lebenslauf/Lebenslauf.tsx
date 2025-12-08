@@ -47,6 +47,8 @@ export default function Lebenslauf(): JSX.Element {
                         <div className="entry">
                             <h3>Fullstack Developer, Softwareentwickler</h3>
                             <p><span>Quereinsteiger:</span> 11.2024 - Heute</p>
+                            <h3>Eigene Projekte</h3>
+                            <p><a href="https://acmessenger.com" target="_blank" rel="noopener noreferrer"><span>AC Messenger - acmessenger.com</span></a></p>
                         </div>
                     </section>
 
