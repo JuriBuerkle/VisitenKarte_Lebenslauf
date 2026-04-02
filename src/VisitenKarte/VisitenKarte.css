@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    color: rgb(82, 6, 6);
     padding: 20px;
 }
 
@@ -55,7 +56,7 @@
 }
 
 .visitenkarte-page .email:hover {
-    color: rgb(214, 160, 160);
+    color: rgb(90, 4, 4);
     cursor: pointer;
 }
 
