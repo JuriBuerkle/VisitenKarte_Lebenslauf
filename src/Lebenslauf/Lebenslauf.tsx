@@ -15,7 +15,7 @@ export default function Lebenslauf(): JSX.Element {
                             <span> +4917632240227 *</span>
                         </p>
                         <a className="email" href="mailto:rastopka@gmx.de">Email: <span>rastopka@gmx.de *</span></a>
-                        <p>Geburtsdatum: 28.8.1973</p>
+                        <p>Geburtsdatum: 28.06.1973</p>
                     </div>
                     <div className="profile-photo">
                         <img src="https://lh3.googleusercontent.com/a/ACg8ocLSKl59L4pC3hFUlqnIboNid0MgBg_HML9p7cLu1U56kyVz2y6c=s288-c-no"
