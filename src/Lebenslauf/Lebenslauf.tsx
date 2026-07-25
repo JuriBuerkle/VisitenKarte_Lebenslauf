@@ -69,7 +69,7 @@ export default function Lebenslauf(): JSX.Element {
                         <div className="entry">
                             <h3>Fullstack Development</h3>
                             <p>11.2024 - 04.2026</p>
-                            <p>ATI Technology Berlin</p>
+                            <p>AIT Technology Berlin</p>
                         </div>
                         <div className="entry">
                             <h3>Diplom Sportlehrer</h3>
