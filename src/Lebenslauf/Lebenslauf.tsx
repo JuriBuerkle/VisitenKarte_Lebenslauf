@@ -10,7 +10,7 @@ export default function Lebenslauf(): JSX.Element {
                 <h1>Juri Bürkle</h1>
                 <header className="header">
                     <div className="contact-info">
-                        <p>Schillerstraße 21, 64569, Nauheim</p>
+                        <p>Wohnort: 64569 Nauheim</p>
                         <p>Mobil:
                             <span> +4917632240227 *</span>
                         </p>
@@ -25,19 +25,13 @@ export default function Lebenslauf(): JSX.Element {
 
                 <main className="main-content">
                     <section className="section">
-                        <h2>KOMPETENZEN</h2>
+                        <h2>TECHNISCHE KOMPETENZEN</h2>
                         <div className="columns">
                             <ul className="text">
-                                <li>Entscheidungsfähigkeit</li>
-                                <li>Sinn für das Notwendige</li>
-                                <li>Verantwortungsbewusstsein</li>
-                                <li>Motivation und Ausdauer</li>
-                            </ul>
-                            <ul className="text">
-                                <li>Kommunikationsstärke</li>
-                                <li>Selbstständige Arbeitsweise</li>
-                                <li>Teamfähigkeit</li>
-                                <li>Lernbereitschaft</li>
+                                <li>Programmiersprachen: Java 17, JavaScript (ES6+), TypeScript, Python, SQL, HTML5/CSS3</li>
+                                <li>Backend & Security: Spring Boot, Spring Security, JPA, REST APIs, Node.js, Express, JWT, WebSockets, MySQL, PostgreSQL</li>
+                                <li>Frontend & Mobile: React, React Native, Redux Toolkit, Tailwind CSS, Formik, Axios, Expo, WebRTC</li>
+                                <li>Tools & Methodik: Git/GitHub, Docker, Digital Ocean, Linux, Trello, Agile/Scrum, JUnit, Maven</li>
                             </ul>
                         </div>
                     </section>
@@ -49,6 +43,9 @@ export default function Lebenslauf(): JSX.Element {
                             <p><span>Quereinsteiger :</span> 11.2024 - Heute</p>
                             <h3>Eigene Projekte</h3>
                             <p><a href="https://acmessenger.com" target="_blank" rel="noopener noreferrer"><span>AC Messenger :</span> acmessenger.com</a></p>
+                            <p>
+                                Fullstack Cross-Platform App (React Native, Node.js, Express, PostgreSQL, WebSockets, WebRTC, Docker, AES-256-Verschlüsselung).
+                            </p>
                             <p><a href="https://weather-app-mfr7.vercel.app/" target="_blank" rel="noopener noreferrer"><span>Weather APP :</span> weather-app-mfr7.vercel.app/</a></p>
                             
                         </div>
