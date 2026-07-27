@@ -45,12 +45,13 @@ export default function Lebenslauf(): JSX.Element {
                     <section className="section">
                         <h2>PRAKTISCHE ERFAHRUNG / IT-PROJEKTE</h2>
                         <div className="entry">
-
                             <p>03.2026 - 04.2026 | Praktikant Softwareentwicklung
                                 UpTeam GmbH, Berlin</p>
-                            <p>• Frontend: Entwicklung responsiver UIs mit React, TypeScript, Tailwind CSS, Formik, Redux Toolkit und Axios.
-                                • Backend: Entwicklung sicherer RESTful APIs mit Java 17, Spring Boot (Spring Security, JPA, Spring Mail) und JWT-Authentifizierung.
-                                • Datenbanken & Agile: Einbindung von MySQL-Datenbanken; Arbeit nach Agile/Scrum-Methodik (GitHub, Trello, Sprint Meetings).</p>
+                                <ul className="text">
+                                    <li>• Frontend: Entwicklung responsiver UIs mit React, TypeScript, Tailwind CSS, Formik, Redux Toolkit und Axios.</li>
+                                    <li>• Backend: Entwicklung sicherer RESTful APIs mit Java 17, Spring Boot (Spring Security, JPA, Spring Mail) und JWT-Authentifizierung.</li>
+                                    <li>• Datenbanken & Agile: Einbindung von MySQL-Datenbanken; Arbeit nach Agile/Scrum-Methodik (GitHub, Trello, Sprint Meetings).</li>
+                                </ul>
                             <h3>Eigene Projekte</h3>
                             <p><a href="https://acmessenger.com" target="_blank" rel="noopener noreferrer"><span>AC Messenger :</span> acmessenger.com</a></p>
                             <p>
