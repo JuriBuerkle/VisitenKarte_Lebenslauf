@@ -82,6 +82,10 @@
     color: #f0a500;
 }
 
+.lebenslauf-page p {
+    color: rgb(242, 192, 192);
+}
+
 .lebenslauf-page p>span {
     text-decoration: underline;
     text-underline-offset: 5px;
