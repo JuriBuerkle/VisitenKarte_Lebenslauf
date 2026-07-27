@@ -27,7 +27,7 @@ export default function Lebenslauf(): JSX.Element {
                     <section className="section">
                         <h2>PROFIL</h2>
                         <div className="entry">
-                            <p>Leidenschaftlicher Fullstack Developer mit über 10 Jahren Erfahrung in der Softwareentwicklung. Spezialisiert auf moderne Webtechnologien und Cross-Platform-Entwicklung.</p>
+                            <p>Zielorientierter Fullstack-Entwickler mit AZAV-zertifizierter Ausbildung und praktischer Erfahrung bei der UpTeam GmbH. Fundierte Kenntnisse in Java 17 (Spring Boot, Spring Security), React, TypeScript und moderner REST-API-Architektur.</p>
                         </div>
                     </section>
                     <section className="section">
