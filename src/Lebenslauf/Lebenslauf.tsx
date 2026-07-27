@@ -25,6 +25,12 @@ export default function Lebenslauf(): JSX.Element {
 
                 <main className="main-content">
                     <section className="section">
+                        <h2>PROFIL</h2>
+                        <div className="entry">
+                            <p>Leidenschaftlicher Fullstack Developer mit über 10 Jahren Erfahrung in der Softwareentwicklung. Spezialisiert auf moderne Webtechnologien und Cross-Platform-Entwicklung.</p>
+                        </div>
+                    </section>
+                    <section className="section">
                         <h2>TECHNISCHE KOMPETENZEN</h2>
                         <div className="columns">
                             <ul className="text">
