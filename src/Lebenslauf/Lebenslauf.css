@@ -28,7 +28,7 @@
 
 .lebenslauf-page .button:hover {
     color: #91ca16;
-    background-color: #8cbcf0;
+    background-color: #0056b3;
     padding: 10px 20px;
 }
 
@@ -133,6 +133,7 @@
 .lebenslauf-page .text {
     list-style: none;
     padding-left: 20px;
+    color: #f1aeae;
 }
 
 .lebenslauf-page .text li::before {
