@@ -66,7 +66,9 @@ export default function Lebenslauf(): JSX.Element {
                         <div className="entry">
                             <h3>Fullstack Development</h3>
                             <p>11.2024 - 04.2026</p>
-                            <p>AIT.Technology Berlin</p>
+                            <p>Weiterbildung zum Fullstack Developer (AZAV / DEKRA zertifiziert)
+                                AIT TR GmbH (AIT Technology Institute), Berlin</p>
+                            <p> Schwerpunkte: Java Core, Spring Boot, Hibernate, Python, JavaScript (ES6+), TypeScript, React, Redux, SQL/NoSQL, Digital Ocean, Linux, Git.</p>
                         </div>
                         <div className="entry">
                             <h3>Diplom Sportlehrer</h3>
