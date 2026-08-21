@@ -57,7 +57,10 @@ export default function Lebenslauf(): JSX.Element {
                             <p>
                                 Fullstack Cross-Platform App (React Native, Node.js, Express, PostgreSQL, WebSockets, WebRTC, Docker, AES-256-Verschlüsselung).
                             </p>
+                            <p><a href="https://github.com/JuriBuerkle/ChgAssetAgent" target="_blank" rel="noopener noreferrer"><span>ChgAssetAgent :</span> github.com/JuriBuerkle/ChgAssetAgent</a></p>
+                            <p> Tech-Stack: NET 8, C#, PostgreSQL, Docker, Semantic, Kernel </p>
                             <p><a href="https://weather-app-mfr7.vercel.app/" target="_blank" rel="noopener noreferrer"><span>Weather APP :</span> weather-app-mfr7.vercel.app/</a></p>
+                            <p> Tech-Stack: OpenWeatherMap Responsive Web-Anwendung (React, REST APIs) </p>
                             
                         </div>
                     </section>
