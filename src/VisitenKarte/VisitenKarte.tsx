@@ -30,9 +30,9 @@ export default function VisitenKarte(): JSX.Element {
                     <a className="email" href="mailto:rastopka@gmx.de">
                         Email: rastopka@gmx.de
                     </a>
-                    <a className="email" href="https://www.linkedin.com/in/juri-bürkle" target="_blank" rel="noreferrer">
+                    <p><a className="email" href="https://www.linkedin.com/in/juri-bürkle" target="_blank" rel="noreferrer">
                         LinkedIn: linkedin.com/in/juri-bürkle
-                    </a>
+                    </a></p>
                     <div>
                         <br />
                         <Link className="link" to="/lebenslauf">Link zum Lebenslauf</Link>
