@@ -102,7 +102,7 @@ export default function Lebenslauf(): JSX.Element {
                         <div className="language-entry">
                             <p>Russisch: Muttersprache</p>
                             <p>Deutsch: C1</p>
-                            <p>Englisch: A1</p>
+                            <p>Englisch: B2</p>
                         </div>
                     </section>
                 </main>
