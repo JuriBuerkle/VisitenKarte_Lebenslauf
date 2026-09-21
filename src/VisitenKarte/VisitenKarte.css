@@ -1,442 +1,111 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap");
-
-:root {
-    --bg-dark: #0b1220;
-    --card-blue-1: #071d2b;
-    --card-blue-2: #0d2d3e;
-    --card-blue-3: #123c57;
-    --line-blue: #4fe3ff;
-    --line-blue-2: #0fb5ff;
-    --gold: #f0d5a0;
-    --gold-2: #d8b36a;
-    --text-soft: #dfeefd;
-    --glass: rgba(255, 255, 255, 0.12);
-    --shadow: rgba(0, 0, 0, 0.55);
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body,
-#root {
-    margin: 0;
-    min-height: 100%;
-    font-family: "Inter", sans-serif;
-    background: #090d15;
-}
-
-body {
-    min-height: 100vh;
-}
-
 .visitenkarte-page {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background:
-        radial-gradient(circle at 15% 85%, rgba(66, 122, 170, 0.28), transparent 26%),
-        radial-gradient(circle at 70% 25%, rgba(52, 202, 255, 0.18), transparent 22%),
-        linear-gradient(135deg, #0d1014 0%, #090d15 100%);
-    padding: 30px;
-}
-
-.business-card {
-    position: relative;
-    width: min(1230px, 92vw);
-    min-height: 700px;
-    border-radius: 30px;
-    background:
-        linear-gradient(180deg, rgba(14, 39, 52, 0.96), rgba(7, 28, 42, 0.98)),
-        linear-gradient(90deg, rgba(15, 76, 102, 0.7), rgba(8, 25, 34, 0.9));
-    box-shadow:
-        0 45px 60px rgba(0, 0, 0, 0.65),
-        inset 0 0 0 1px rgba(157, 220, 255, 0.14),
-        inset 0 0 30px rgba(62, 193, 255, 0.12);
-    overflow: hidden;
-    border: 1px solid rgba(214, 233, 255, 0.2);
-}
-
-.business-card::before {
-    content: "";
-    position: absolute;
-    inset: 14px;
-    border-radius: 26px;
-    background:
-        radial-gradient(circle at 20% 18%, rgba(59, 211, 255, 0.22), transparent 18%),
-        radial-gradient(circle at 68% 22%, rgba(59, 211, 255, 0.12), transparent 18%),
-        linear-gradient(120deg, rgba(54, 152, 255, 0.12), rgba(0, 0, 0, 0));
-    border: 1px solid rgba(135, 206, 255, 0.18);
-    pointer-events: none;
-}
-
-.business-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        repeating-linear-gradient(135deg,
-            rgba(93, 216, 255, 0.08) 0px,
-            rgba(93, 216, 255, 0.08) 1px,
-            transparent 1px,
-            transparent 18px);
-    mix-blend-mode: screen;
-    opacity: 0.22;
-    pointer-events: none;
-}
-
-.card-content {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1.65fr 0.95fr;
-    gap: 20px;
-    min-height: 700px;
-    padding: 50px 54px 36px 54px;
-}
-
-.left-panel {
-    position: relative;
-    padding: 10px 10px 0 14px;
-}
-
-.left-panel::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 28px;
-    background:
-        radial-gradient(circle at 0% 100%, rgba(56, 184, 255, 0.18), transparent 28%),
-        radial-gradient(circle at 50% 0%, rgba(79, 227, 255, 0.1), transparent 26%),
-        linear-gradient(90deg, transparent 0%, rgba(90, 219, 255, 0.17) 20%, transparent 42%);
-    pointer-events: none;
-}
-
-h1 {
-    margin: 0;
-    text-align: center;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 700;
-    font-size: clamp(3.8rem, 4vw, 5.5rem);
-    letter-spacing: 0.02em;
-    color: var(--gold);
-    text-shadow: 0 0 10px rgba(240, 213, 160, 0.45);
-}
-
-h2 {
-    margin: 0;
-    text-align: center;
-    font-size: clamp(1.6rem, 1.6vw, 2.5rem);
-    font-weight: 500;
-    color: #dfeaf9;
-    font-style: italic;
-    opacity: 0.95;
-}
-
-.tech-panel {
-    margin-top: 18px;
-}
-
-.label,
-.stack-title {
-    margin: 0;
-    font-size: clamp(1.15rem, 1.5vw, 2rem);
-    font-weight: 500;
-    color: #e6f2ff;
-    text-align: center;
-    letter-spacing: 0.01em;
-}
-
-.tech-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
-    gap: 4px 18px;
-    margin-top: 16px;
-    padding: 0 10px;
-}
-
-.tech-grid ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.tech-grid li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-start;
-    font-size: 1.1rem;
-    color: #dbeeff;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-}
-
-.tag {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 24px;
-    font-size: 0.73rem;
-    font-weight: 700;
-    border-radius: 7px;
-    color: #081922;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-}
-
-.tag-python {
-    background: linear-gradient(135deg, #f3ca57, #ffb300);
-}
-
-.tag-java {
-    background: linear-gradient(135deg, #ffc18f, #ff8a00);
-}
-
-.tag-git {
-    background: linear-gradient(135deg, #ffb0a6, #ff6b5a);
-}
-
-.tag-html {
-    background: linear-gradient(135deg, #ff9d70, #ff6d2c);
-}
-
-.tag-css {
-    background: linear-gradient(135deg, #7bd0ff, #35a6ff);
-}
-
-.tag-github {
-    background: linear-gradient(135deg, #d7e5ff, #8ab3ff);
-}
-
-.tag-js {
-    background: linear-gradient(135deg, #fcd96b, #ffbf19);
-}
-
-.tag-ts {
-    background: linear-gradient(135deg, #8ac5ff, #3e8cff);
-}
-
-.tag-sql {
-    background: linear-gradient(135deg, #b9d5ff, #7aa8ff);
-}
-
-.stack-panel {
-    position: relative;
-    margin-top: 18px;
-    padding: 8px 12px 0 0;
-}
-
-.stack-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
-    margin-top: 18px;
-    min-height: 88px;
-    filter: drop-shadow(0 0 8px rgba(73, 226, 255, 0.45));
-}
-
-.icon-cube,
-.icon-cloud,
-.icon-db,
-.icon-api {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border: 2px solid rgba(94, 211, 255, 0.9);
-    border-radius: 16px;
-    background: rgba(8, 25, 34, 0.25);
-    box-shadow: inset 0 0 18px rgba(94, 211, 255, 0.18);
-}
-
-.icon-cube::before,
-.icon-cloud::before,
-.icon-db::before,
-.icon-api::before {
-    content: "";
-    position: absolute;
-    inset: 12px;
-    border: 2px solid rgba(94, 211, 255, 0.9);
-    border-radius: 12px;
-    transform: rotate(45deg);
-}
-
-.icon-cloud::before {
-    border-radius: 50%;
-    transform: none;
-    inset: 16px 12px;
-}
-
-.icon-db::before {
-    border-radius: 8px;
-    transform: none;
-    inset: 14px 8px;
-    background:
-        linear-gradient(90deg, transparent 0 36%, rgba(94, 211, 255, 0.8) 36% 38%, transparent 38% 62%, rgba(94, 211, 255, 0.8) 62% 64%, transparent 64%),
-        linear-gradient(180deg, transparent 0 36%, rgba(94, 211, 255, 0.8) 36% 38%, transparent 38% 62%, rgba(94, 211, 255, 0.8) 62% 64%, transparent 64%);
-}
-
-.icon-api::before {
-    border-radius: 50%;
-    transform: none;
-    inset: 14px;
-    background:
-        radial-gradient(circle at center, rgba(94, 211, 255, 0.8) 0 20%, transparent 21% 100%);
-}
-
-.contact-info {
-    margin-top: 24px;
-    padding-left: 10px;
-    color: var(--text-soft);
-}
-
-.contact-info p {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    margin: 10px 0;
-    font-size: 1.12rem;
-    line-height: 1.4;
-    color: #edf7ff;
-    flex-wrap: wrap;
-}
-
-.contact-info a {
-    color: #edf7ff;
-    text-decoration: none;
-    transition: opacity 0.2s ease;
-}
-
-.contact-info a:hover {
-    opacity: 0.8;
-}
-
-.label-inline {
-    color: var(--gold);
-    font-weight: 600;
-    min-width: 90px;
-}
-
-.resume-link {
-    margin-top: 12px !important;
-}
-
-.resume-link a {
-    color: var(--gold);
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-}
-
-.right-panel {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 18px 12px 12px 0;
-}
-
-.portrait-frame {
-    position: relative;
-    width: 100%;
-    max-width: 430px;
-    height: 360px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, rgba(25, 79, 103, 0.8), rgba(9, 28, 38, 0.95));
-    border: 1px solid rgba(123, 216, 255, 0.5);
-    box-shadow:
-        inset 0 0 18px rgba(123, 216, 255, 0.18),
-        0 0 12px rgba(94, 211, 255, 0.2);
-    padding: 18px;
-}
-
-.portrait {
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    background-image:
-        linear-gradient(135deg, rgba(9, 35, 48, 0.28), rgba(13, 28, 32, 0.08)),
-        url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80");
+    background-image: url("/J_Buerkle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center top;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.28);
+    
+    padding: 20px;
 }
 
-.qr-card {
-    position: relative;
-    width: 190px;
-    height: 190px;
-    display: grid;
-    place-items: center;
-    border-radius: 18px;
-    background: linear-gradient(135deg, #f1d8a3, #c79d57);
-    box-shadow: inset 0 0 0 2px rgba(66, 45, 10, 0.2), 0 0 16px rgba(255, 206, 98, 0.18);
-    padding: 10px;
+.visitenkarte-page h1 {
+    text-align: center;
+    color: rgb(244, 209, 10);
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
 }
 
-.qr-card::before {
-    content: "";
-    position: absolute;
-    inset: 18px;
+.visitenkarte-page h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(166, 207, 54);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.visitenkarte-page .technologien {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(166, 207, 54);
+}
+
+.visitenkarte-page .columns {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.visitenkarte-page ul {
+    font-size: 30px;
+    color: rgb(125, 221, 69);
+    list-style: none;
+    padding: 0;
+}
+
+.visitenkarte-page .contact-info {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(171, 223, 40);
+}
+
+.visitenkarte-page .email {
+    color: rgb(171, 223, 40);
+    text-decoration: none;
+}
+
+.visitenkarte-page .email:hover {
+    color: rgb(90, 4, 4);
+    cursor: pointer;
+}
+
+.visitenkarte-page .link {
+    color: rgb(171, 223, 40);
+    text-decoration: none;
+}
+
+.visitenkarte-page .link:hover {
+    transition: all 0.4s ease;
+    background-color: #1c0241;
+    border: 2px solid #4CAF50;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+    color: rgb(221, 218, 19);
+    font-size: 25px;
+    padding: 0px 20px;
+    cursor: pointer;
 }
 
-.qr-card img {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    background: #f4d7a1;
+.visitenkarte-page .phone {
+    color: rgb(171, 223, 40);
 }
 
-@media (max-width: 980px) {
-    .business-card {
-        min-height: unset;
+.visitenkarte-page .phone a {
+    color: rgb(171, 223, 40);
+    text-decoration: none;
+}
+
+.visitenkarte-page .phone a:hover {
+    color: rgb(214, 160, 160);
+    cursor: pointer;
+}
+
+.visitenkarte-page .phone-marquee {
+    display: inline-block;
+    animation: marquee 3s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
     }
 
-    .card-content {
-        grid-template-columns: 1fr;
-        padding: 24px 20px 30px;
+    50% {
+        transform: translateX(10px);
     }
 
-    .right-panel {
-        order: -1;
-        padding-right: 0;
-    }
-
-    .portrait-frame {
-        max-width: 100%;
-        height: 320px;
-    }
-
-    .tech-grid {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-
-    .tech-grid ul {
-        width: min(240px, 100%);
-    }
-
-    .contact-info p {
-        justify-content: center;
-        text-align: center;
+    100% {
+        transform: translateX(0);
     }
 }
